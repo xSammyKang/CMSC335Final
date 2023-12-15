@@ -5,7 +5,7 @@ Final project for CMSC335
 ## Members
 - Riya Singhal (rsinghal)
 - Keshav Gulati (kgulati1)
-- Sammy Kang (skang126)
+- Samuel Kang (skang126)
 
 ## Functionality
 
