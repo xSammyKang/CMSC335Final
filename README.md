@@ -14,6 +14,7 @@ Final project for CMSC335
 - User can see what all classes they have searched for and their corresponding pre-requisites.
 - API used:
   - [umd.io](https://beta.umd.io/)
+- [Youtube Demo Video](https://www.youtube.com/watch?v=d7T9Gag4FG8)
 
 ## Design Files
 
