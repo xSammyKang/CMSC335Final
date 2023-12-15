@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Class Planner</title>
+</head>
+<body>
+    <nav class="nav">
+        <span class="nav__span">
+            Class Planner | University of Maryland
+        </span>
+    </nav>
+
+    <form action="/prereqs" method="post" class="form">
+        <section class="input-section">
+            <label>Enter your name: <input type="text" name="nameWhenEntering" class="input-field" required> </label>
+            <label>Enter a class: <input type="text" name="className" class="input-field" required></label>
+            <br>
+            <button type="submit" class="pre-req-btn">Show Pre-requisites</button>
+        </section>
+    </form>
+
+    <form action="/prevClasses" method="post" class="form">
+        <section class="input-section">
+            <label>Lookup previous searches by name: <input type="text" name="nameWhenSearching" class="input-field" required></label>
+            <br>
+            <button type="submit" class="show-classes-btn">Show Classes</button>
+        </section>
+    </form>
+</body>
+</html>

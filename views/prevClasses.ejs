@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Previous Class Searches</title>
+</head>
+<body>
+    <nav class="nav">
+        <span class="nav__span">
+            <%- name %>'s Class Planner | University of Maryland
+        </span>
+    </nav>
+
+    <section class="input-section">
+        <%- info %>
+    </section>
+    
+    <% if (numClasses > 0) { %>
+        <form action="/clearData" method="post" class="form">
+            <section class="input-section">
+                <input type="hidden" name="nameWhenClearing" value="<%- name %>">
+                <a href="/"><button type="button">Go Home</button></a>
+                <button type="submit" name="removeData" class="clear-data-btn">Clear Data</button>
+            </section>
+        </form>
+    <% } else { %>
+        <div class="form">
+            <section class="input-section">
+                <a href="/"><button>Go Home</button></a>
+            </section>
+        </div>
+    <% } %>
+
+    <script>
+        document.getElementsByName("removeData")[0].addEventListener("click", function(event) {
+            event.preventDefault();
+            if (confirm("Are you sure you want to remove your class data?")) {
+                this.form.submit();
+            }
+        });
+    </script>
+</body>
+</html>
