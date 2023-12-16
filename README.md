@@ -9,6 +9,8 @@ Final project for CMSC335
 
 ## Functionality
 
+- Can be run from the command line using "node code.js [Port Number]"
+- Deployed using Render [here](https://cmsc335final-v1cz.onrender.com/)
 - User can check what pre-requisites a specific class has.
 - All classes are added to a database.
 - User can see what all classes they have searched for and their corresponding pre-requisites.
